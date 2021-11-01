@@ -23,7 +23,7 @@ Please refer the reference images in section `Running the tests in CI`
 ### Report
 'mocha awesome reporter' is employed to compile the reports per spec and tests underneath the spec when tests are run through cli.
 The report is created in `html` format and is stored under `/reports/mochareports/report.html`
-![samplereport](./cypress/xreadmeimages/report.png)
+#### ![samplereport](./cypress/xreadmeimages/report.png)
 ### CLI 
 The tests can be triggered via cypress ui and cli.
 Please refer the `reference` section and `Running the tests in local machine`
@@ -46,8 +46,10 @@ Clone repo on your system. Please make sure you have `Node` installed on your sy
 The tests in CI can be run in 2 ways-
 1. Auto run on `push` event
 2. Manual Run. Pls refer follwoing reference images.
-![CI1](./cypress/xreadmeimages/CI1.png)
-![CI2](./cypress/xreadmeimages/CI2.png)
+#### ![CIS1](./cypress/xreadmeimages/CI1.png)
+#### ![CIS2](./cypress/xreadmeimages/CI2.png)
+
+
 ---
 ## Asssumtions:
 1. AUT is `up and running` with `no change` to workflow.
