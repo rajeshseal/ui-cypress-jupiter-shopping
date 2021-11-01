@@ -1,0 +1,12 @@
+[
+    {
+        "prod": "Funny Cow",
+        "qty": "2",
+        "price": "10.99"
+    },
+    {
+        "prod": "Fluffy Bunny",
+        "qty": "1",
+        "price": "9.99"
+    }
+]

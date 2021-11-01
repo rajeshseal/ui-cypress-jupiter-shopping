@@ -1,0 +1,36 @@
+{
+  "name": "ui-cypress-jupiter-shopping",
+  "version": "1.0.0",
+  "description": "ui-cypress-jupiter-shopping",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^8.7.0",
+    "cypress-multi-reporters": "^1.5.0",
+    "mocha": "^9.1.3",
+    "mochawesome": "^6.3.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
+  },
+  "scripts": {
+    "clean-reports": "rmdir /S /Q cypress\\reports && mkdir cypress\\reports && mkdir cypress\\reports\\mochareports",
+    "combine-reports": "mochawesome-merge --files .\\cypress\\reports\\mocha\\**\\*.json > cypress\\reports\\mochareports\\report.json",
+    "generate-reports": "marge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports",
+    "pretest": "npm run clean-reports",
+    "posttest": "npm run combine-reports && npm run generate-reports",
+    "cypress-ui-open": "npx cypress open",
+    "customscript": "npx cypress run --spec 'cypress/integration/_ui_tests_/**/*' --browser chrome",
+    "customscriptheaded": "npx cypress run --spec 'cypress/integration/_ui_tests_/**/*' --headed --browser chrome",
+    "test": "npm run customscript || npm run posttest",
+    "test-headed": "npm run customscriptheaded || npm run posttest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajeshseal/ui-cypress-jupiter-shopping.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rajeshseal/ui-cypress-jupiter-shopping/issues"
+  },
+  "homepage": "https://github.com/rajeshseal/ui-cypress-jupiter-shopping#readme"
+}

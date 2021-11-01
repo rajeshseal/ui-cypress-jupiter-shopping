@@ -1,0 +1,21 @@
+{
+    "$schema": "https://on.cypress.io/cypress.schema.json",
+    "baseUrl": "https://jupiter.cloud.planittesting.com",
+    "pageLoadTimeout": 60000,
+    "waitForAnimations": false,
+    "watchForFileChanges": true,
+    "video": false,
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+        "reporterEnabled": "mochawesome",
+        "mochawesomeReporterOptions": {
+            "reportDir": "cypress/reports/mocha",
+            "quite": true,
+            "overwrite": false,
+            "html": false,
+            "json": true
+        }
+    },
+    "chromeWebSecurity": false,
+    "screenshotOnRunFailure": true
+}
