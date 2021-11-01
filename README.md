@@ -14,6 +14,12 @@ Tech Stack: `cypress` `JavaScript` `node` | AUT: https://jupiter.cloud.planittes
 The framework has following attributes
 ### Data Driven
 The framework reads the `json` data files and uses for the test data and is agnostic to the records in data files.
+### CI
+The test framework is configured to work with GitHub Actions CI upon `push` and `manual` trigger.
+The current configured jobs test the following combinations-
+1. Ubuntu + Chrome
+2. Windows + Edge
+Please refer the reference images in section `Running the tests in CI`
 ### Report
 'mocha awesome reporter' is employed to compile the reports per spec and tests underneath the spec when tests are run through cli.
 The report is created in `html` format and is stored under `/reports/mochareports/report.html`
@@ -21,6 +27,7 @@ The report is created in `html` format and is stored under `/reports/mochareport
 ### CLI 
 The tests can be triggered via cypress ui and cli.
 Please refer the `reference` section and `Running the tests in local machine`
+
 
 ---
 ## How to setup on local machine:
@@ -35,10 +42,12 @@ Clone repo on your system. Please make sure you have `Node` installed on your sy
 3. Execute `npm run cypress-ui-open` command in terminal to open the Cypress GUI.
 
 ---
-## Running the tests in CI:   TO BE UPDATED
-1. Execu
-2. E
-
+## Running the tests in CI:
+The tests in CI can be run in 2 ways-
+1. Auto run on `push` event
+2. Manual Run. Pls refer follwoing reference images.
+![CI1](./cypress/xreadmeimages/CI1.png)
+![CI2](./cypress/xreadmeimages/CI2.png)
 ---
 ## Asssumtions:
 1. AUT is `up and running` with `no change` to workflow.
