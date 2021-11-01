@@ -1,9 +1,11 @@
 name: Cypress Tests for Jupiter Shopping
 
-on: [push]
+on: 
+  workflow_dispatch:
+  push:
 
 jobs:
-  cypress-run-ubuntu-chrome:
+  jupiter-ubuntu-chrome:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -16,7 +18,7 @@ jobs:
           browser: chrome
 
 
-  cypress-run-windows-edge:
+  jupiter-windows-edge:
     runs-on: windows-latest
     steps:
       - name: Checkout
