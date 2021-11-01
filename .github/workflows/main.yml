@@ -14,3 +14,16 @@ jobs:
         uses: cypress-io/github-action@v2.9.7
         with:
           browser: chrome
+
+
+  cypress-run-ubuntu-edge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      # Install NPM dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Cypress run
+        uses: cypress-io/github-action@v2.9.7
+        with:
+          browser: edge
