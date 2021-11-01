@@ -44,10 +44,9 @@ Clone repo on your system. Please make sure you have `Node` installed on your sy
 ---
 ## Running the tests in CI:
 The tests in CI can be run in 2 ways-
-1. Auto run on `push` event
-2. Manual Run. Pls refer follwoing reference images.
-#### ![CIS1](./cypress/xreadmeimages/CI1.png)
-#### ![CIS2](./cypress/xreadmeimages/CI2.png)
+1. Auto run on `push` event. ![CIS1](./cypress/xreadmeimages/CI1.png)
+2. Manual Run.  images. ![CIS2](./cypress/xreadmeimages/CI2.png)
+
 
 
 ---
